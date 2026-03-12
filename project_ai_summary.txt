@@ -1,0 +1,45 @@
+PROJECT AI & MACHINE LEARNING IMPLEMENTATION SUMMARY
+=====================================================
+
+This document outlines the AI, Machine Learning, and Large Language Model (LLM) components integrated into the Stock Trade Strategy Analyser Chatbot project.
+
+1. LARGE LANGUAGE MODEL (LLM) ARCHITECTURE
+------------------------------------------
+We implemented a flexible, provider-agnostic LLM interface (`llm_client.py`) that supports:
+- OpenAI GPT: Used as the primary high-performance brain.
+- Ollama (Local LLM): Integrated to allow for privacy-conscious or cost-free local inference (e.g., using Llama 3 or Mistral).
+- Specialized Prompting: We crafted a structured system prompt that enforces "explainable AI" (XAI). The LLM is forced to respond using only bullet points and tables, ensuring clarity and educational value for users.
+
+2. RETRIEVAL-AUGMENTED GENERATION (RAG)
+---------------------------------------
+To give the chatbot specialized "knowledge" about trading strategies without retraining the model, we built a Local RAG Index (`rag_index.py`):
+- Semantic Embeddings: Uses `SentenceTransformers` to convert strategy documents into vector math.
+- Local Storage: Persists document embeddings to disk for fast retrieval.
+- Context Injection: When you ask a question, the system finds the most relevant strategy snippets and "feeds" them to the LLM as background context.
+
+3. ARTIFICIAL INTELLIGENCE IN TECHNICAL ANALYSIS (TA)
+-----------------------------------------------------
+The TA Engine (`ta_engine.py`) isn't just about simple charts; it uses algorithmic pattern detection:
+- VCP (Volatility Contraction Pattern): A custom algorithm that detects "tightening" price action and volume contraction—key indicators used by legendary traders like Mark Minervini.
+- Breakout Detection: Uses volume-weighted logic to verify if a price move has institutional backing.
+- Multi-Signal Scoring: Combines MACD, RSI, Moving Average crossovers, and Bollinger Bands into a unified "Bullish/Bearish" confidence score.
+
+4. AUTOMATED FUNDAMENTAL ANALYSIS (FA)
+--------------------------------------
+The FA Engine (`fa_engine.py`) performs automated "financial health" checks:
+- Web Scraping/API Integration: Automatically fetches live data (ROE, P/E, Debt-to-Equity) from Screener.in or yfinance.
+- Scoring Algorithm: Assigns weights to different metrics (e.g., ROE is weighted at 25%) to produce a fundamental health score from 0-100.
+- Qualitative Flags: An AI logic layer that translates raw numbers into human-readable "Strengths" and "Risks" (e.g., "ROE above 18% indicates efficient capital use").
+
+5. STRATEGY FUSION & RANKING
+----------------------------
+The "Brain" of the project is the Strategy Engine (`strategy_engine.py`):
+- Hybrid Intelligence: It fuses TA (Technical) and FA (Fundamental) data. For example, a "Breakout" strategy is weighted 60% towards Technicals, while a "Swing" strategy might be more balanced.
+- Automated Trade Planning: The AI calculates precise Entry, Stop-Loss, and Target levels based on ATR (Average True Range) volatility, mimicking how a professional quant trader manages risk.
+
+SUMMARY OF TOOLS USED:
+- Python (Core logic)
+- Pandas & Numpy (Data processing and signal calculation)
+- SentenceTransformers (Machine Learning Embeddings)
+- OpenAI API & Ollama (Language Modeling)
+- BeautifulSoup (Data extraction)

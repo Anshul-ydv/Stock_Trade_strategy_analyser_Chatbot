@@ -1,0 +1,42 @@
+{
+  "RELIANCE_1d": {
+    "path": "/Users/anshulyadav/Downloads/Stock_Trade_strategy_analyser_Chatbot-main/trading-chatbot/data/cache/raw/RELIANCE_1d.parquet",
+    "updated_at": "2026-03-10T09:48:51.082471+00:00"
+  },
+  "TCS_1d": {
+    "path": "/Users/anshulyadav/Downloads/Stock_Trade_strategy_analyser_Chatbot-main/trading-chatbot/data/cache/raw/TCS_1d.parquet",
+    "updated_at": "2026-03-10T09:48:53.663186+00:00"
+  },
+  "INFY_1d": {
+    "path": "/Users/anshulyadav/Downloads/Stock_Trade_strategy_analyser_Chatbot-main/trading-chatbot/data/cache/raw/INFY_1d.parquet",
+    "updated_at": "2026-03-10T09:48:51.542468+00:00"
+  },
+  "HDFCBANK_1d": {
+    "path": "/Users/anshulyadav/Downloads/Stock_Trade_strategy_analyser_Chatbot-main/trading-chatbot/data/cache/raw/HDFCBANK_1d.parquet",
+    "updated_at": "2026-03-10T09:48:51.968422+00:00"
+  },
+  "ICICIBANK_1d": {
+    "path": "/Users/anshulyadav/Downloads/Stock_Trade_strategy_analyser_Chatbot-main/trading-chatbot/data/cache/raw/ICICIBANK_1d.parquet",
+    "updated_at": "2026-03-10T09:48:52.377489+00:00"
+  },
+  "SBIN_1d": {
+    "path": "/Users/anshulyadav/Downloads/Stock_Trade_strategy_analyser_Chatbot-main/trading-chatbot/data/cache/raw/SBIN_1d.parquet",
+    "updated_at": "2026-03-10T09:48:52.821383+00:00"
+  },
+  "TATASTEEL_1d": {
+    "path": "/Users/anshulyadav/Desktop/TCHATBOT/trading-chatbot/data/cache/raw/TATASTEEL_1d.parquet",
+    "updated_at": "2025-11-24T14:32:57.747673+00:00"
+  },
+  "IDEA_1d": {
+    "path": "/Users/anshulyadav/Downloads/Stock_Trade_strategy_analyser_Chatbot-main/trading-chatbot/data/cache/raw/IDEA_1d.parquet",
+    "updated_at": "2026-03-10T09:48:53.192555+00:00"
+  },
+  "PRECWIRE_1d": {
+    "path": "/Users/anshulyadav/Downloads/Stock_Trade_strategy_analyser_Chatbot-main/trading-chatbot/data/cache/raw/PRECWIRE_1d.parquet",
+    "updated_at": "2026-03-10T09:48:54.110687+00:00"
+  },
+  "RELIANCE.NS_1d": {
+    "path": "/Users/anshulyadav/Downloads/Stock_Trade_strategy_analyser_Chatbot-main/trading-chatbot/data/cache/raw/RELIANCE.NS_1d.parquet",
+    "updated_at": "2026-03-10T09:48:54.883823+00:00"
+  }
+}
