@@ -8,6 +8,8 @@ A comprehensive AI-powered stock trading ecosystem that combines algorithmic str
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.68+-009688.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 
+(-YOU WILL REQUIRE FYERS AUTH KEY AND GEMINI API KEY-)
+
 ---
 
 ##  Core Features
